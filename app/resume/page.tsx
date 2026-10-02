@@ -1,0 +1,4 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+export const metadata: Metadata={title:'Resume — Muhammad Hamza Mushtaq',description:'Resume of Muhammad Hamza Mushtaq, Software & AI Engineer.'}
+export default function ResumePage(){return <main className="section-shell simple-page"><p className="eyebrow">Resume</p><h1>Muhammad Hamza<br/><span>Mushtaq.</span></h1><p className="case-lede">Software &amp; AI Engineer · AI systems · Machine learning · Computer vision · Full-stack engineering</p><div className="hero-actions"><a className="button button-primary" href="/Muhammad-Hamza-Mushtaq-CV.pdf" target="_blank" rel="noreferrer">View resume <span>↗</span></a><a className="text-link" href="/Muhammad-Hamza-Mushtaq-CV.pdf" download>Download PDF <span>↓</span></a></div><Link className="text-link" href="/">← Back home</Link></main>}

@@ -1,0 +1,2 @@
+import Link from 'next/link'
+export default function NotFound() { return <main className="not-found section-shell"><p className="eyebrow">404 / Signal lost</p><h1>This page doesn’t<br /><span>exist.</span></h1><p>Maybe the project you’re looking for moved somewhere else.</p><div className="hero-actions"><Link className="button button-primary" href="/">Back home <span>↗</span></Link><Link className="text-link" href="/work">View work <span>→</span></Link></div></main> }

@@ -1,0 +1,5 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { projects } from '@/lib/content'
+export const metadata: Metadata = { title:'Work — Muhammad Hamza Mushtaq', description:'Selected AI systems, machine learning research, and full-stack products by Muhammad Hamza Mushtaq.' }
+export default function WorkPage(){ return <><main className="section-shell listing-page"><p className="eyebrow">Work / Systems, products, experiments</p><h1>Selected<br/><span>work.</span></h1><p className="section-intro">A collection of AI systems, research programs, and full-stack products. Each project is presented with its problem, architecture, evidence, and limits.</p><div className="listing-grid">{projects.map(p=><Link className="listing-item" key={p.slug} href={`/work/${p.slug}`}><div><span className="eyebrow">{p.number} / {p.status}</span><h2>{p.title}</h2><p>{p.summary}</p></div><span className="listing-arrow">↗</span></Link>)}</div></main><footer className="site-footer"><Link href="/">← Home</Link><span>Evidence over claims.</span></footer></> }
