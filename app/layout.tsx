@@ -4,7 +4,7 @@ import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
 const ibmPlexMono = IBM_Plex_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap', weight: ['400', '500', '600'] })
-const siteUrl = 'https://4173-il5mbwzzs0j6ssmgzpuy4-9709572c.us1.manus.computer'
+const siteUrl = 'https://muhammad-hamza-portfolio-sable.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
